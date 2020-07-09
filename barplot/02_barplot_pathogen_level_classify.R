@@ -1,0 +1,10 @@
+library(reshape2)
+library(readr)
+library(ggplot2)
+data2 =read.csv("pathogen_level_percent.csv",header = T)
+data3=melt(data2,variable.name = "classify",value.name = "percentage")
+data3$sample=factor(data3$sample,levels = c("luoNEB1","luoNEB2","luoNEB3","luoNEB4","luoNEB5","luoNEB6","luoNEB7","luoNEB8","luoNEB9","puNEB1","puNEB2","puNEB3","puNEB4","puNEB5","puNEB6","puNEB7","puNEB8","puNEB9","quanNEB1","quanNEB2","quanNEB3","quanNEB4","quanNEB5","quanNEB6","quanNEB7","quanNEB8","quanNEB9","quNEB1","quNEB2","quNEB3","quNEB4","quNEB5","quNEB6","quNEB7","quNEB8","quNEB9"
+))
+cbbPalette <- c("#750000","#00A600","#000079")
+p=ggplot(data=data3, aes(x=sample, y=percentage, fill=classify)) +geom_bar(stat="identity")+ scale_fill_manual(values=cbbPalette)
+p + theme(axis.text.x = element_text(size = 10,color = "black", face = "italic", vjust = 0.5, hjust = 0.5, angle = 45))
