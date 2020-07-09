@@ -2,6 +2,7 @@
 
 - 质控及kraken分类流程
 - barplot绘制
+- correlation绘制
 - PCA绘制
 - 阳性阈值的计算【python脚本】
 - coverage的计算及绘制
