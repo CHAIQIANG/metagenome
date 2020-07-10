@@ -1,0 +1,1 @@
+bowtie2 -p 10 -x /f/chaiqiang/projects/metagenomics/meta_coverage/rerference/Ecoli_index -1 ./test_data/luoill10_TKD180702273_HNMFGCCXY_L2_1.fastq -2 ./test_data/luoill10_TKD180702273_HNMFGCCXY_L2_2.fastq | samtools sort -O bam -@ 10 -o - > luoill10_Ecoli.bam
