@@ -47,7 +47,15 @@ To build the database indices on the downloaded files, run `krakenuniq-build --d
 
 To run classification on a pair of FASTQ files, use `krakenuniq`
 
-`krakenuniq --db small_database --threads 20 --fastq-input --paired $sample.fastq1 $sample.fastq2 > result_classify.tsv`
+`krakenuniq --db small_database --threads 20 --report-file result.tsv --fastq-input --gzip-compressed --paired $sample.fq1.gz $sample.fq2.gz > result_classify.tsv`
+
+💥Note: `result.csv`文件中包含了K-mer的物种分类，K-mer counts以及coverage等，文件如下：
+
+![image-20200716112911546](C:\Users\13516\AppData\Roaming\Typora\typora-user-images\image-20200716112911546.png)
+
+`result_classify.tsv`文件的结果是k-mer和reads的比对结果：
+
+![image-20200716113038055](C:\Users\13516\AppData\Roaming\Typora\typora-user-images\image-20200716113038055.png)
 
 ## FAQ
 
