@@ -51,11 +51,11 @@ To run classification on a pair of FASTQ files, use `krakenuniq`
 
 💥Note: `result.csv`文件中包含了K-mer的物种分类，K-mer counts以及coverage等，文件如下：
 
-![image-20200716112911546](https://github.com/CHAIQIANG/metagenome/blob/master/krakenuniq/image-20200716112911546.png)
+![image-20200716114849318](C:\Users\13516\AppData\Roaming\Typora\typora-user-images\image-20200716114849318.png)
 
 `result_classify.tsv`文件的结果是k-mer和reads的比对结果：
 
-![image-20200716113038055](https://github.com/CHAIQIANG/metagenome/blob/master/krakenuniq/image-20200716113038055.png)
+![image-20200716114933966](C:\Users\13516\AppData\Roaming\Typora\typora-user-images\image-20200716114933966.png)
 
 ## FAQ
 
